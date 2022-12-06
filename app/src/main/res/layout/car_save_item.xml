@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+
+    <ImageView
+        android:id="@+id/ivCarPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="" />
+
+    <TextView
+        android:id="@+id/tvModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivCarPic"
+        android:paddingLeft="5dp"
+        android:text="Rating"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_text_normal"
+        android:textStyle="normal"  />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_toRightOf="@+id/ivCarPic"
+        android:paddingLeft="5dp"
+        android:text="Title"
+        android:textColor="@color/def_y_color"
+        android:textSize="@dimen/size_text_small"
+        android:textStyle="normal"
+        android:layout_below="@+id/tvModel" />
+
+
+</RelativeLayout>

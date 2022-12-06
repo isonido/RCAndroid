@@ -1,0 +1,76 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/tb_text_color"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:popupTheme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        android:weightSum="1">
+
+    <include layout="@layout/toolbar_actions" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+    android:layout_width="match_parent"
+        android:id="@+id/imageView"
+    android:background="@color/lv_background_color_dark"
+    android:layout_gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:focusable="false"
+        android:adjustViewBounds="false"
+        android:baselineAlignBottom="false"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:cropToPadding="false"
+        android:duplicateParentState="false"
+        android:fadeScrollbars="false"
+        android:filterTouchesWhenObscured="false"
+        android:fitsSystemWindows="false"
+        android:focusableInTouchMode="false"
+        android:hapticFeedbackEnabled="false"
+        android:isScrollContainer="false"
+        android:keepScreenOn="false"
+        android:longClickable="false"
+        android:nestedScrollingEnabled="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:saveEnabled="false"
+        android:soundEffectsEnabled="false"
+        android:layout_height="1dp" />
+
+    <include layout="@layout/search_box" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_weight="3"
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include layout="@layout/banner" />
+        </LinearLayout>
+
+        <include layout="@layout/fragment_drawer" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

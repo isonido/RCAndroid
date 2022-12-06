@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="def_y_color">#FFA9933D</color>
+    <color name="text_color">#ff101010</color>
+
+    <color name="lv_background_color">#ffc1c1c1</color>
+    <color name="lv_background_color_dark">#ffadadad</color>
+
+    <color name="row_lv_background_color">#ffffffff</color>
+    <color name="tb_background_color">#EEEBF0</color>
+    <color name="tb_text_color">#FFEEEEEE</color>
+    <color name="element_background_color">#ffadadad</color>
+    <color name="element_text_color">#FFFFFF</color>
+    <color name="date_background_color">#5BC0DE</color>
+    <color name="price_background_color">#3D9400</color>
+    <color name="requests_background_color">#999999</color>
+
+    <!---EditText Selector-->
+    <color name="et_background_color_start">#FFEEEEEE</color>
+
+    <!--Menu colors-->
+    <color name="menu_background_color">#ff222222</color>
+    <color name="divider_menu_background_color">#ff535764</color>
+    <color name="menu_text_color">#ffd1d2d2</color>
+    <color name="selected_menu_text_color">#ff222222</color>
+    <color name="selected_menu_background_color">#EEEBF0</color>
+    <color name="selected_devider_menu_background_color">#ffd1c7a0</color>
+    <color name="header_text_color">#FFA500</color>
+    <color name="background_row_forum_section">@color/row_lv_background_color</color>
+    <color name="selected_background_row_forum_section">#fff7d96b</color>
+
+    <!--GridView-->
+    <color name="gridview_item_background">#8e8699</color>
+
+    <!--Button-->
+    <color name="btn_bg_color">#ffffff</color>
+    <color name="btn_bg_color_pressed">#FFA9933D</color>
+    <color name="btn_text_color">#000000</color>
+
+    <!--Spinner-->
+    <color name="spn_popup_text_color">#000000</color>
+    <color name="spn_popup_bg_color">#ffffff</color>
+    <color name="spn_selected_item_text_color">#faebfa</color>
+    <color name="spn_divider_color">#a8615b61</color>
+
+    <color name="pb_color">#FFA9933D</color>
+
+</resources>

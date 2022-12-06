@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_details_toolbar" />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/menu_text_color"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Написать в магазин"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/size_text_large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Ваш e-mail для обратной связи:"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_text_large"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:minLines="1"
+        android:inputType="textEmailAddress"
+        android:id="@+id/ibEMailAddr" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Ваше сообщение:"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_text_large"/>
+
+    <EditText
+        android:id="@+id/etEmailBody"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:minLines="6"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/ibMailCarDetails"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:maxLines="1"
+        android:nestedScrollingEnabled="true"
+        android:onClick="mailAdSend"
+        android:text="Отправить"
+        android:textColor="@color/btn_bg_color_pressed"
+        android:textSize="@dimen/size_text_large"
+        android:textStyle="bold"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>

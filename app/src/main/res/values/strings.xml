@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Монеты России</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_exit">Выход</string>
+    <string name="action_list_view">List</string>
+    <string name="action_grid_view">Grid</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_exit_dialog">Вы уверены, что хотите выйти?</string>
+    <string name="title_activity_activity_car_details">ActivityCarDetails</string>
+    <string name="title_activity_activity_car_details_add">ActivityCarDetailsAdd</string>
+    <string name="title_activity_activity_info">ActivityInfo</string>
+    <string name="title_activity_activity_info2">ActivityInfo2</string>
+    <string name="str_car_details">Детали монеты</string>
+    <string name="title_activity_send_email">ActivitySendEmail</string>
+    <string name="str_info">Информация</string>
+
+    <string name="email_login">rial.gold2016@gmail.com</string>
+    <string name="email_password">hbfkrhtlbn</string>
+    <string name="email_to">bkv@ricgold.com</string>
+    <string name="email_from">RusianCoins_Android</string>
+    <string name="email_subject_general">Обращение Монеты России Андроид</string>
+    <string name="email_subject_car_details">Ваш заказ</string>
+    <string name="email_activity_header">Письмо</string>
+
+    <string name="pb_title_text">Обработка данных..</string>
+    <string name="activity_cardetailsadd_header_text">Добавить</string>
+    <string name="activity_cardetailsadd_toCatalog_button_text">В каталог</string>
+    <string name="download_connecting">подключение</string>
+    <string name="download_connected">подключен</string>
+    <string name="download_downloading">скачивание</string>
+    <string name="download_complete">скачачивание завершено</string>
+    <string name="notice_download_complete">скачан</string>
+    <string name="download_pause">скачачивание приостановлено</string>
+    <string name="notice_download_pause">приостановлен</string>
+    <string name="download_canceled">скачачивание отменено</string>
+    <string name="notice_download_canceled">отменен</string>
+    <string name="download_failed">ошибка скачивания</string>
+
+    <string name="url_cache">http://vh61904.eurodir.ru/rar/zip_arch_001.zip</string>
+    <string name="cache_file_name">zip_arch_001.zip</string>
+    <string name="download_ex_connection">ошибка сети, проверьте подключение</string>
+    <string name="notice_install_cache">Загрузка кэша</string>
+    <string name="download_cache_body">Для дальнейшего использования необходимо скачать</string>
+    <string name="pb_download">Проверка данных..</string>
+    <string name="msg_no_internet">Интернет соединение не доступно</string>
+    <string name="btn_retry">Повторить</string>
+    <string name="btn_exit">Выход</string>
+    <string name="msg_no_file">Указанного файла нет на сервере</string>
+
+</resources>

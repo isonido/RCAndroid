@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@android:color/darker_gray"
+        android:text="Количество монет"
+        android:gravity="left"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="bottom"
+        android:paddingTop="0dp"
+        android:id="@+id/textView31" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView31"
+        android:id="@+id/linearLayout3"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="В каталоге"
+            android:id="@+id/textView33"
+            android:textSize="15dp"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/colAll"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout6"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="В коллекции"
+            android:id="@+id/textView40"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/colUser"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/imageButton2"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Повторных"
+            android:id="@+id/textView35"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/colPovUser"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@android:color/darker_gray"
+        android:text="Серии/Наборы"
+        android:gravity="left"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="bottom"
+        android:paddingTop="0dp"
+        android:id="@+id/textView32"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout5"
+        android:layout_below="@+id/textView32"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Всего"
+            android:id="@+id/textView38"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/nabAll"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout7"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Собрано"
+            android:id="@+id/textView42"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/nabUser"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@android:color/darker_gray"
+        android:text="Ссылки"
+        android:gravity="left"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="bottom"
+        android:paddingTop="0dp"
+        android:id="@+id/textView37"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout10"
+        android:gravity="center"
+        android:layout_below="@+id/textView37"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Оценить"
+            android:id="@+id/textView2"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="на Google Play"
+            android:id="@+id/GPlay"
+            android:textSize="15dp"
+            android:textColor="@color/btn_bg_color_pressed" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/imageButton3"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/linearLayout10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout8"
+        android:gravity="center"
+        android:layout_below="@+id/imageButton3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Написать"
+            android:id="@+id/textView44"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="разработчику"
+            android:id="@+id/razrab"
+            android:textSize="15dp"
+            android:textColor="@color/btn_bg_color_pressed" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/imageButton4"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/linearLayout8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout9"
+        android:gravity="center"
+        android:layout_below="@+id/imageButton4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Вступить в группу"
+            android:id="@+id/textView45"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="вКонтакте"
+            android:id="@+id/vk"
+            android:textSize="15dp"
+            android:textColor="@color/btn_bg_color_pressed" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

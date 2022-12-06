@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_details"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/tb_text_color"
+    android:theme="@style/ToolbarColoredBackArrow"
+    app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+        <!--
+                <Spinner
+                    android:id="@+id/toolbar_spinner_cat"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom|left"
+                    android:drawSelectorOnTop="true"
+                    android:popupBackground="@color/spn_popup_bg_color"
+                    android:visibility="gone"/>
+        -->>
+        <TextView
+            android:id="@+id/tb_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/str_info"
+            android:gravity="center"
+            android:layout_marginRight="55dp"
+            android:textSize="18sp"
+            android:textColor="@color/btn_text_color"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1" />
+        <!--
+                        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/iv_change_view"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:src="@drawable/ic_view_list_white_24dp"
+                            android:visibility="gone"/>
+                -->>
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>
+
+

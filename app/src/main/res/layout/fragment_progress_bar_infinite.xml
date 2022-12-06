@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.andrey_sonido.russiancoins.fragments.FragmentProgressBarInfinite">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/pb_title_text"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_text_large"
+        android:textStyle="italic"/>
+
+    <com.andrey_sonido.russiancoins.ProgressBarCircularIndeterminate
+        android:id="@+id/pbCircularIndeterminate"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/pb_color" />
+
+</LinearLayout>

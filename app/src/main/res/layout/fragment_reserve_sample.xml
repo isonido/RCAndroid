@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/activity_details_toolbar" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/incBanner">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/yandexmap"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="false" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:id="@+id/linearLayout"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Адрес"
+                        android:id="@+id/textView23"
+                        android:gravity="right"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="10dp"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="115172, Россия, г.Москва, ул. Малые Каменщики, д. 10"
+                        android:id="@+id/textView24"
+                        android:textStyle="normal"
+                        android:textSize="12dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@+id/linearLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/linearLayout2"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Время работы"
+                        android:id="@+id/textView25"
+                        android:allowUndo="true"
+                        android:gravity="right"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:text="понедельник/четверг - с 9.00 до 18.00, пятница - с 9.00 до 17.00,                               суббота/воскресенье - выходной."
+                        android:id="@+id/textView30"
+                        android:textColor="#000000"
+                        android:textStyle="normal"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Вы можете продать нам свою коллекцию монет!"
+                    android:id="@+id/textView19"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:textSize="12dp"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Напишите или позвоните нам, какие монеты вы хотите продать или купить."
+                    android:id="@+id/textView22"
+                    android:layout_below="@+id/textView19"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textStyle="normal"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/ibIemail"
+                        android:src="@drawable/email"
+                        android:onClick="emailAd"
+                        android:layout_marginRight="30dp" />
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/ibItel"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/tel"
+                        android:onClick="callAd"
+                        android:nestedScrollingEnabled="true" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

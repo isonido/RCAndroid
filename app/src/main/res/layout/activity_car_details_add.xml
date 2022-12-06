@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_details_toolbar" />
+
+    <include layout="@layout/car_save_item" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/imageView"
+        android:background="@color/lv_background_color_dark"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <include layout="@layout/mech_auto_add" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="В каталог / коллекцию"
+        android:id="@+id/btn_add_return"
+        android:textColor="@color/btn_bg_color_pressed"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:nestedScrollingEnabled="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textStyle="normal"
+        tools:ignore="ContentDescription" />
+
+
+</LinearLayout>

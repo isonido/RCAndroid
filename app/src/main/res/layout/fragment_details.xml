@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/ivCarPic"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:text="Реверс"
+                android:id="@+id/btn_revers"
+                android:enabled="true"
+                android:allowUndo="false"
+                android:background="@color/btn_bg_color_pressed" />
+
+            <Button
+                android:id="@+id/btn_avers"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:background="@color/btn_bg_color"
+                android:onClick="plus"
+                android:text="Аверс"
+                android:textColor="@color/btn_text_color"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/plus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/info" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="В моей коллекции"
+                android:id="@+id/textView"
+                android:textSize="@dimen/size_text_small"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Нет"
+                android:id="@+id/colCoins"
+                android:textColor="@color/text_color"
+                android:gravity="center"
+                android:textSize="@dimen/size_text_small" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Добавить"
+                android:id="@+id/btn_add_change"
+                android:textColor="@color/btn_bg_color_pressed"
+                android:textSize="@dimen/size_text_small"
+                android:gravity="center"
+                android:nestedScrollingEnabled="true"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/imageView"
+            android:layout_weight="0.37"
+            android:background="@color/lv_background_color_dark"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Цена продажи"
+                android:id="@+id/textView4"
+                android:gravity="center"
+                android:textSize="@dimen/size_text_small" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="PriceRic"
+                android:id="@+id/priceRic"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_text_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Купить"
+                android:id="@+id/btn_zakaz"
+                android:gravity="center"
+                android:textSize="@dimen/size_text_small"
+                android:textColor="@color/btn_bg_color_pressed"
+                android:textStyle="bold|normal" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Описание"
+            android:id="@+id/textView8"
+            android:layout_gravity="top"
+            android:paddingLeft="10dp"
+            android:background="@color/tb_text_color"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_text_normal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="0.20" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/tv_serial"
+                    android:text="Серия"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Качество"
+                    android:id="@+id/textView11"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Чеканка"
+                    android:id="@+id/textView14"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/tv_serial"
+                    android:text="Тираж, шт"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_serial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="Serial"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/tvQuality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="Quality"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small" />
+
+                <TextView
+                    android:id="@+id/tvDvor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="Dvor"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small" />
+
+                <TextView
+                    android:id="@+id/tvPcs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="pcs"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/imageView2"
+            android:layout_weight="0.37"
+            android:background="@color/lv_background_color_dark"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="0.20" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/tvStill"
+                    android:text="Металл, проба"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Масса общая, г"
+                    android:id="@+id/textView21"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Диаметр, мм"
+                    android:id="@+id/textView17"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Толщина, мм"
+                    android:id="@+id/textView7"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvStill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="Still"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/tvWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="Weight"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small" />
+
+                <TextView
+                    android:id="@+id/tvDiameter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="Diametr"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/tvThickness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="Thickness"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Подробно"
+            android:id="@+id/textView9"
+            android:layout_gravity="top"
+            android:paddingLeft="10dp"
+            android:background="@color/tb_text_color"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_text_normal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="0.20">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_create_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/tv_create"
+                    android:text="Дата выпуска"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Каталожный номер"
+                    android:id="@+id/textView5"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/tv_create"
+                    android:text="Содержание металла, г"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Художник"
+                    android:id="@+id/textView27"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/tv_create"
+                    android:text="Скульптор"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Оформление гурта"
+                    android:id="@+id/textView29"
+                    android:textSize="@dimen/size_text_small"
+                    android:layout_gravity="right"
+                    android:paddingRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="12.12.2008"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small" />
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="1111-2222"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small" />
+
+                <TextView
+                    android:id="@+id/tvWeightStill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="metal"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/tvCreator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="Created"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/tvSculptor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="Sculpter"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/tvGurt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="0dp"
+                    android:text="Gurt"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_text_small"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/imageView3"
+            android:layout_weight="0.37"
+            android:background="@color/lv_background_color_dark"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Реверс: Аверс:"
+            android:id="@+id/tvText1"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/size_text_small"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

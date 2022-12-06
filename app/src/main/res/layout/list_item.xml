@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp">
+
+    <ImageView
+        android:id="@+id/ivCarPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_toRightOf="@+id/ivCarPic"
+        android:paddingLeft="5dp"
+        android:text="Title"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_text_small"
+        android:textStyle="normal"
+        android:layout_below="@+id/tvModel"
+        android:layout_alignRight="@+id/tv_mt"
+        android:layout_alignEnd="@+id/tv_mt"
+        android:maxLines="3"
+        android:gravity="fill_vertical"
+        android:layout_above="@+id/tvPrice" />
+
+    <TextView
+        android:id="@+id/tv_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="5dp"
+        android:text="12.12.2008"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_text_small"
+        android:textStyle="normal"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="false" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_at_header"
+        android:layout_toRightOf="@+id/ivCarPic"
+        android:paddingLeft="5dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:text="Price"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_text_small"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvPriceRic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/ivCarPic"
+        android:layout_toRightOf="@+id/ivCarPic"
+        android:paddingLeft="5dp"
+        android:text="PriceRic"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_text_small"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_mt_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_mt"
+        android:layout_above="@+id/tv_at_header"
+        android:paddingLeft="5dp"
+        android:text="ММД: "
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_text_small"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv_mt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/tv_at_header"
+        android:paddingLeft="5dp"
+        android:text="4"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_text_small"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv_at_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/tv_at"
+        android:paddingLeft="5dp"
+        android:text="СПМД: "
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_text_small"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="5dp"
+        android:text="0"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_text_small"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="Rating"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_text_normal"
+        android:textStyle="normal"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/ivCarPic"
+        android:layout_toEndOf="@+id/ivCarPic" />
+
+</RelativeLayout>

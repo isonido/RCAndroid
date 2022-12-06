@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vf_download"
+    android:background="@color/menu_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Progress-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="ru.app.autocat.fragments.FragmentProgressBarInfinite">
+
+        <TextView
+            android:id="@+id/tv_progress_header"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/pb_title_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_text_large"
+            android:textStyle="italic"/>
+
+        <com.andrey_sonido.russiancoins.ProgressBarCircularIndeterminate
+            android:layout_marginTop="20dp"
+            android:id="@+id/pbCircularIndeterminate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/pb_color" />
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/tv_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="@string/download_cache_body"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_text_large" />
+
+        <ProgressBar
+            android:id="@+id/download_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/tv_message_text"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:indeterminate="true"
+            android:indeterminateBehavior="cycle" />
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/download_progress"
+            android:background="@color/btn_bg_color"
+            android:padding="5dp"
+            android:text="Продолжить"
+            android:textColor="@color/btn_text_color" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/download_progress"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@color/btn_bg_color"
+            android:padding="5dp"
+            android:text="Отмена"
+            android:textColor="@color/btn_text_color" />
+    </RelativeLayout>
+</ViewFlipper>

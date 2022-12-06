@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/tb_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+    <EditText
+        android:id="@+id/et_find"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="1dp"
+        android:layout_weight="30"
+        android:background="@drawable/selector_search_box_background"
+        android:hint="Поиск"
+        android:imeOptions="actionSearch"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text=""
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_text_normal"
+        android:visibility="gone"
+        tools:ignore="HardcodedText">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_find"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="@color/btn_bg_color_pressed"
+        android:text="Отмена"
+        android:textColor="@color/btn_text_color"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

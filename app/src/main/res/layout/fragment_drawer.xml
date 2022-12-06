@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llDrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:nestedScrollingEnabled="false"
+    android:background="@color/row_lv_background_color"
+    android:baselineAligned="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/tb_text_color"
+                android:text="Сортировать по"
+                android:gravity="left"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="bottom"
+                android:paddingTop="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/btnYear"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/btn_bg_color_pressed"
+                    android:focusable="true"
+                    android:singleLine="false"
+                    android:text="Годам"
+                    android:textColor="@color/btn_bg_color"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/btnNominal"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/btn_bg_color_pressed"
+                    android:focusable="true"
+                    android:text="Номиналу"
+                    android:textColor="@color/btn_bg_color"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/btnTirag"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/btn_bg_color_pressed"
+                    android:focusable="true"
+                    android:text="Тиражу"
+                    android:textColor="@color/btn_bg_color"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/tb_text_color"
+                android:text="Показывать"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:id="@+id/textView12"
+                android:paddingLeft="10dp"
+                android:gravity="left" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+                <ListView
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lv_year"
+                    android:choiceMode="singleChoice"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:drawSelectorOnTop="true"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="-5dp" />
+
+                <ListView
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lv_nominal"
+                    android:choiceMode="singleChoice"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="-5dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/tb_text_color"
+                android:text="Монетный двор"
+                android:gravity="left"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/textView13" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@color/row_lv_background_color" >
+
+                <Button
+                    android:id="@+id/btnDvorAll"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Все"
+                    android:background="@color/btn_bg_color_pressed"
+                    android:focusable="true"
+                    android:textColor="@color/btn_bg_color"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/btnDvorMmd"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="ММД"
+                    android:background="@color/btn_bg_color_pressed"
+                    android:focusable="true"
+                    android:textColor="@color/btn_bg_color"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/btnDvorSpmd"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="СПМД"
+                    android:background="@color/btn_bg_color_pressed"
+                    android:focusable="true"
+                    android:textColor="@color/btn_bg_color"
+                    android:nestedScrollingEnabled="true"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/tb_text_color"
+                android:text="Серия/Набор"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:gravity="left" />
+
+            <ListView
+                android:id="@+id/lv_fragment_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:choiceMode="singleChoice"
+                android:focusable="true"
+                android:clickable="true"
+                android:drawSelectorOnTop="true"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="-5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/tb_text_color"
+                android:text="Металл"
+                android:gravity="left"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/textView18"
+                android:layout_gravity="bottom" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@color/row_lv_background_color" >
+
+                <Button
+                    android:id="@+id/btnStillAll"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Все"
+                    android:background="@color/btn_bg_color_pressed"
+                    android:focusable="true"
+                    android:textColor="@color/btn_bg_color"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/btnDrag"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Драгоценные"
+                    android:background="@color/btn_bg_color_pressed"
+                    android:focusable="true"
+                    android:textColor="@color/btn_bg_color"
+                    android:textSize="12dp"
+                    android:maxLines="1" />
+
+                <Button
+                    android:id="@+id/btnNedrag"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Недрагоценные"
+                    android:background="@color/btn_bg_color_pressed"
+                    android:focusable="true"
+                    android:textColor="@color/btn_bg_color"
+                    android:textSize="12dp"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnResetFilters"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Сбросить фильтры"
+                android:background="@color/tb_text_color"
+                android:focusable="true"
+                android:textColor="@color/btn_text_color"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnOnsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_row_forum_section"
+        android:text="Купить монеты"
+        android:textColor="@color/btn_bg_color_pressed" />
+
+</LinearLayout>
